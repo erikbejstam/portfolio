@@ -61,7 +61,6 @@ li::before {
     margin-right: 6px;
 }
 
-
 ul {
     margin-top: 0em;
     margin-bottom: 1.7em;
@@ -75,7 +74,7 @@ a, a:visited {
     color: rgb(0, 48, 136);
 }
 
-a:hover {
+a:hover, .resume:hover {
     color: rgb(115, 154, 225);
 }
 
