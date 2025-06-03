@@ -1,0 +1,58 @@
+#spiritual {
+    color: rgb(255, 97, 61);
+    animation: fadeInSpiritual 15s ease-in-out forwards;
+    cursor: pointer;
+}
+
+#spiritual:hover {
+    color: rgb(243, 109, 31);
+    opacity: 0.7 !important;
+}
+
+#star {
+  position: fixed;
+  top: 20px;
+  right: -100px;
+  width: 6px;
+  height: 6px;
+ 
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100vw, 100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+     box-shadow:
+    0 0 15px 8px rgba(255, 255, 255, 0.9),
+    0 0 30px 15px rgba(148, 176, 255, 0.6);
+  filter: drop-shadow(0 0 5px rgb(123, 179, 253));
+  }
+  50% {
+    box-shadow:
+      0 0 25px 15px rgba(255, 255, 255, 1),
+      0 0 40px 25px rgb(45, 59, 255);
+    filter: drop-shadow(0 0 10px rgb(207, 255, 255));
+
+  }
+}
+
+.flying {
+  animation: 
+    fly 4s linear forwards,
+    pulse-glow 1s linear 3;
+}

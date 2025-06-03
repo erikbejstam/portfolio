@@ -99,11 +99,6 @@ hr {
     flex: 0.65;
 }
 
-.spiritual {
-    color: rgb(255, 97, 61);
-    animation: fadeInSpiritual 15s ease-in-out forwards;
-}
-
 .learning {
     display: flex;
     flex-direction: column;
