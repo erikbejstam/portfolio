@@ -38,6 +38,7 @@ h2 {
     font-style: italic;
     font-weight: 400;
     font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.05);
 }
 
 .profile-pic {
@@ -52,7 +53,7 @@ div.links li {
 }
 
 li::before {
-    content: "";
+    content: "~";
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -88,6 +89,7 @@ hr {
 
 .about {
     display: flex;
+    margin-bottom: 1em;
     font-size: 0.7em;
     font-style: italic;
     /* color: rgb(137, 137, 184); */
@@ -113,6 +115,26 @@ hr {
 
 .learning ul {
     font-size: 20px;
+}
+
+#spiritual {
+    color: rgb(255, 97, 61);
+    animation: fadeInSpiritual 23s ease-in-out forwards;
+    cursor: pointer;
+}
+
+#spiritual:hover {
+    color: rgb(243, 109, 31);
+    opacity: 0.7 !important;
+}
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
 }
 
 .text-animation {
