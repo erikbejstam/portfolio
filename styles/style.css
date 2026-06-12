@@ -1,196 +1,206 @@
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    font-family: "Bodoni Moda", serif;
-    font-optical-sizing: auto;
-    background: #fcf6e9;
-    color: rgb(0, 48, 136);
-    font-size: 2em;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  background: #fcf6e9;
+  color: rgb(0, 48, 136);
+  font-size: 2em;
 
-    margin: 40px;
+  margin: 40px;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
 }
 
 h1 {
-    margin-bottom: 0;
-    margin-top: 0px;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 2.5em;
-    flex: 0 0 65%;
+  margin-bottom: 0;
+  margin-top: 0px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.5em;
+  flex: 0 0 65%;
 }
 
 h2 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.8em;
-    color: rgba(0, 0, 0, 0.05);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.05);
 }
 
 .profile-pic {
-    max-width: 16%;
-    flex: 1;
-    animation: fadeIn 5s ease-in-out forwards;
+  max-width: 16%;
+  flex: 1;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+.links {
+  margin-bottom: 5em;
 }
 
 div.links li {
-    list-style-type: none;
-    font-size: 24px;
+  list-style-type: none;
+  font-size: 24px;
 }
 
 li::before {
-    content: "~";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background: url('static/bullet.svg') no-repeat center center;
-    background-size: contain;
-    margin-right: 6px;
+  content: "~";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url("static/bullet.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 6px;
 }
 
 ul {
-    margin-top: 0em;
-    margin-bottom: 1.7em;
-    padding-left: 0.8em;
-    font-size: 32px;
-    list-style: none;
+  margin-top: 0em;
+  margin-bottom: 1.7em;
+  padding-left: 0.8em;
+  font-size: 32px;
+  list-style: none;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: rgb(0, 48, 136);
+a,
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 48, 136);
 }
 
-a:hover, .resume:hover {
-    color: rgb(115, 154, 225);
+a:hover,
+.resume:hover {
+  color: rgb(115, 154, 225);
 }
 
 hr {
-    width: 40%;
-    color: rgb(0, 48, 136);
-    animation: fadeInLine 2s ease-in-out forwards;
-    margin-top: 1.4em;
-    margin-bottom: 1.4em; 
+  width: 40%;
+  color: rgb(0, 48, 136);
+  animation: fadeInLine 2s ease-in-out forwards;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
 }
 
 .about {
-    display: flex;
-    margin-bottom: 1em;
-    font-size: 0.7em;
-    font-style: italic;
-    /* color: rgb(137, 137, 184); */
-
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-size: 0.7em;
+  font-style: italic;
+  /* color: rgb(137, 137, 184); */
 }
 
 .about-text {
-    flex: 0.65;
+  display: flex;
+  justify-content: center;
+  flex: 0.65;
 }
 
 .learning {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 1.5em;
-    font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 .learning ul {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #spiritual {
-    color: rgb(255, 97, 61);
-    animation: fadeInSpiritual 23s ease-in-out forwards;
-    cursor: pointer;
+  color: rgb(255, 97, 61);
+  animation: fadeInSpiritual 23s ease-in-out forwards;
+  cursor: pointer;
 }
 
 #spiritual:hover {
-    color: rgb(243, 109, 31);
-    opacity: 0.7 !important;
+  color: rgb(243, 109, 31);
+  opacity: 0.7 !important;
 }
 
 #matrix {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    pointer-events: none;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .text-animation {
-    animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-.text-animation h1:nth-child(1) {animation-delay: 3s;} 
+.text-animation h1:nth-child(1) {
+  animation-delay: 3s;
+}
 
 @media (max-width: 790px) {
-    h1 {
-        font-size: 1.5em;
-    }    
+  h1 {
+    font-size: 1.5em;
+  }
 
-    .profile-pic {
-        max-width: 30%;
-    }
+  .profile-pic {
+    max-width: 30%;
+  }
 }
 
 @media (max-width: 430px) {
-    body {
-        font-size: 1em;
-    }    
+  body {
+    font-size: 1em;
+  }
 
-    .profile-pic {
-        max-width: 30%;
-    }
+  .profile-pic {
+    max-width: 30%;
+  }
 
-    ul {
-        margin-bottom: 1em;
-        padding-left: 0.5em;
-    }
+  ul {
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+  }
 
-    li, li a {
-        font-size: 0.7em;
-    }
-
+  li,
+  li a {
+    font-size: 0.7em;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInLine {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.3;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 @keyframes fadeInSpiritual {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.3;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
